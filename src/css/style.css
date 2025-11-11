@@ -1,0 +1,72 @@
+/* arquivo css */
+
+/* variaveis de css */
+:root {
+    --bg-color-primary: #04933c;
+    --bg-color-secundary: #efc20a;
+    --bg-color-menu: gray;
+}
+
+/* reseta as configuracoes da pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* cabecalho */
+.header {
+    display: flex; /* deixa flexivel, em linha */
+    width: 100%; /* largura */
+    height: 60px; /* altura */
+    position: sticky; /* ajusta a posicao */
+    top: 0; /* deixa fixo no topo */
+    background-color: var(--bg-color-primary); /* cor de fundo */
+    padding: 16px; /* espacamento interno */
+    text-align: center; /* centraliza itens*/
+    align-items: center; /* centraliza itens*/
+}
+
+.header .titulo {
+    color: var(--bg-color-secundary);
+    font-size: 40px;
+}
+
+/* corpo do site */
+.main {
+    display: flex; /* deixa flexivel, em linha */
+    height: 100vh; /* altura */
+    position: fixed; /* ajusta a posicao */
+}
+
+/* menu */
+.menu {
+    width: 220px; /* largura */
+    background-color: var(--bg-color-secundary); /* cor de fundo */
+    padding: 16px; /* espacamento interno */
+}
+
+.menu-lista {
+    list-style-type: none; /* tira a porra da bolinha da lista */
+    display: flex; /* deixa flexivel, em linha */
+    flex-direction: column; /* deixa flexivel, em coluna */
+    gap: 20px; /* espacamento */
+}
+
+.menu-item a {
+    text-decoration: none; /* tira a porra da linha do link */
+    padding: 14px; /* espacamento interno */
+    font-size: 20px; /* fonte */
+    color: black; /* cor */
+}
+
+/* hover opcional */
+/* .menu-item:hover {
+    background-color: bisque;
+    width: 100%;
+} */
+
+.section {
+    flex: 1;
+}
+
