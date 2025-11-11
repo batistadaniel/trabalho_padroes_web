@@ -1,4 +1,11 @@
 /* arquivo css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Arabic:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* dividindo o css em partes e importando como mudulos para deixar mais limpo */
+@import "./partials/header.css";
+@import "./partials/main.css";
+@import "./partials/menu.css";
+@import "./partials/conteudo.css";
 
 /* variaveis de css */
 :root {
@@ -13,60 +20,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* cabecalho */
-.header {
-    display: flex; /* deixa flexivel, em linha */
-    width: 100%; /* largura */
-    height: 60px; /* altura */
-    position: sticky; /* ajusta a posicao */
-    top: 0; /* deixa fixo no topo */
-    background-color: var(--bg-color-primary); /* cor de fundo */
-    padding: 16px; /* espacamento interno */
-    text-align: center; /* centraliza itens*/
-    align-items: center; /* centraliza itens*/
-}
-
-.header .titulo {
-    color: var(--bg-color-secundary);
-    font-size: 40px;
-}
-
-/* corpo do site */
-.main {
-    display: flex; /* deixa flexivel, em linha */
-    height: 100vh; /* altura */
-    position: fixed; /* ajusta a posicao */
-}
-
-/* menu */
-.menu {
-    width: 220px; /* largura */
-    background-color: var(--bg-color-secundary); /* cor de fundo */
-    padding: 16px; /* espacamento interno */
-}
-
-.menu-lista {
-    list-style-type: none; /* tira a porra da bolinha da lista */
-    display: flex; /* deixa flexivel, em linha */
-    flex-direction: column; /* deixa flexivel, em coluna */
-    gap: 20px; /* espacamento */
-}
-
-.menu-item a {
-    text-decoration: none; /* tira a porra da linha do link */
-    padding: 14px; /* espacamento interno */
-    font-size: 20px; /* fonte */
-    color: black; /* cor */
-}
-
-/* hover opcional */
-/* .menu-item:hover {
-    background-color: bisque;
-    width: 100%;
-} */
-
-.section {
-    flex: 1;
-}
-

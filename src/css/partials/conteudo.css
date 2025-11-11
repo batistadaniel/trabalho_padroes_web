@@ -1,0 +1,17 @@
+.content {
+    display: flex; /* deixa flexivel, em linha */
+    flex-direction: column; /* deixa flexivel, em coluna */
+    gap: 12px;
+}
+
+.section {
+    flex: 1; /* ocupa todo espaco que sobrou do lado do menu */
+    overflow-y: auto; /* deixa ROLAvel ... lá ele kkkkk */
+    scrollbar-width: none; /* tira a caralha da barra de rolagem */
+    padding: 36px; /* espacamento interno */ 
+    height: 90%; /* ajusta a altura pra nao cortar la embaixo */   
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", Sans-Serif;
+}

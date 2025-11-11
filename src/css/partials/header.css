@@ -1,0 +1,25 @@
+/* cabecalho */
+.header {
+    display: flex; /* deixa flexivel, em linha */
+    width: 100%; /* largura */
+    height: 60px; /* altura */
+    position: sticky; /* ajusta a posicao */
+    top: 0; /* deixa fixo no topo */
+    background-color: var(--bg-color-primary); /* cor de fundo */
+    padding: 16px 50px; /* espacamento interno */
+    text-align: center; /* centraliza itens*/
+    align-items: center; /* centraliza itens*/
+    box-shadow: 0 2px 4px  rgb(134, 128, 128);
+    z-index: 99999999; /* se sobrepoe por cima de tudp */
+    /* border-bottom: 2px  #000 ; */
+}
+
+.header .titulo {
+    color: var(--bg-color-secundary);
+    font-size: 40px;
+    font-family: "Nunito", sans-serif;
+}
+
+.header a {
+    text-decoration: none;
+}

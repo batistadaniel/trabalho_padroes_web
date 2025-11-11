@@ -9,7 +9,7 @@ async function carregarPagina(pagina) { // funcao assincrona, significa que pode
 }
 
 // carrega a home inicialmente
-carregarPagina('../../index.html');
+carregarPagina('../src/pages/home.html');
 
 // Ao clicar no menu, troca o conteúdo
 document.querySelectorAll('nav ul li a').forEach(link => { // pega os elementos a serem clicados e percorre

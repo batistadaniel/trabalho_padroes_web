@@ -1,0 +1,42 @@
+/* menu */
+.menu {
+    width: 220px; /* largura */
+    background-color: var(--bg-color-secundary); /* cor de fundo */
+    padding: 16px; /* espacamento interno */
+    overflow-y: auto; /* deixa ROLAvel ... lá ele kkkkk */
+    scrollbar-width: none; /* tira a caralha da barra de rolagem */
+    margin-bottom: 60px; /* cancela a altura do header para aparecer tudo do menu la embaixo */ 
+
+}
+
+.menu-lista {
+    list-style-type: none; /* tira a porra da bolinha da lista */
+    display: flex; /* deixa flexivel, em linha */
+    flex-direction: column; /* deixa flexivel, em coluna */
+    gap: 10px; /* espacamento */
+    
+}
+
+.menu-item {
+    display: flex;
+    /* justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+}
+
+.menu-item img {
+    width: 26px;
+}
+
+.menu-item a {
+    text-decoration: none; /* tira a porra da linha do link */
+    margin: 0 14px; /* espacamento interno */
+    font-size: 20px; /* fonte */
+    color: black; /* cor */
+}
+
+/* hover opcional */
+/* .menu-item:hover {
+    background-color: bisque;
+    width: 100%;
+    border-radius: 4px;
+} */
