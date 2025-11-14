@@ -8,7 +8,7 @@
     flex: 1; /* ocupa todo espaco que sobrou do lado do menu */
     overflow-y: auto; /* deixa ROLAvel ... lá ele kkkkk */
     scrollbar-width: none; /* tira a caralha da barra de rolagem */
-    padding: 36px; /* espacamento interno */ 
+    padding: 36px 36px 100px; /* espacamento interno */ 
     height: 90%; /* ajusta a altura pra nao cortar la embaixo */   
 }
 

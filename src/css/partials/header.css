@@ -6,7 +6,7 @@
     position: sticky; /* ajusta a posicao */
     top: 0; /* deixa fixo no topo */
     background-color: var(--bg-color-primary); /* cor de fundo */
-    padding: 16px 50px; /* espacamento interno */
+    padding: 16px 26px; /* espacamento interno */
     text-align: center; /* centraliza itens*/
     align-items: center; /* centraliza itens*/
     box-shadow: 0 2px 4px  rgb(134, 128, 128);
@@ -14,12 +14,39 @@
     /* border-bottom: 2px  #000 ; */
 }
 
-.header .titulo {
-    color: var(--bg-color-secundary);
-    font-size: 40px;
-    font-family: "Nunito", sans-serif;
+/* gambiarra para endieitar o botao do menu */
+.content-header {
+    display: flex; /* deixa flexivel, em linha */
+    align-items: center; /* alinha na vertical */
+    width: 100%; /* largura */
 }
 
-.header a {
-    text-decoration: none;
+/* configura imagem */
+.content-header img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 4px;
 }
+
+.header .titulo {
+    display: flex; /* deixa flexivel, em linha */
+    color: var(--bg-color-secundary); /* cor da letra */
+    font-size: 40px; /* tamanho da fonte */
+    font-family: "Nunito", sans-serif; /* estilo da fonte */
+}
+
+
+.header a {
+    text-decoration: none; /* tira a linha debaixo do nome pois e um link */
+    margin: 0 auto; /* deixa o nome centralizado */
+    text-align: center;  /* deixa o nome centralizado */
+}
+
+/* responsividade */
+@media screen and (min-width: 768px) { /* quando a largura da tela for maior que  */
+    .content-header img { /* botao de abrir o menu  */
+        display: none; /* fica oculto */
+    }
+}
+

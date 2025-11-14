@@ -2,11 +2,12 @@
 .menu {
     width: 220px; /* largura */
     background-color: var(--bg-color-secundary); /* cor de fundo */
-    padding: 16px; /* espacamento interno */
+    font-family: "Roboto", sans-serif ;
+    padding: 16px 16px 80px; /* espacamento interno */
     overflow-y: auto; /* deixa ROLAvel ... lá ele kkkkk */
     scrollbar-width: none; /* tira a caralha da barra de rolagem */
     margin-bottom: 60px; /* cancela a altura do header para aparecer tudo do menu la embaixo */ 
-
+    left: 0;
 }
 
 .menu-lista {
@@ -40,3 +41,20 @@
     width: 100%;
     border-radius: 4px;
 } */
+
+/* menu mobile */
+.menu-mobile {
+    display: none;
+}
+/* quando o menu for aberto */
+.menu-mobile.aberto {
+    display: block;
+    transition: left 0.3s ease;
+}
+
+/* responsividade */
+@media screen and (max-width: 768px) { /* quando a largura da tela for menor que  */
+    .menu { /* o menu desktop */
+        display: none; /* fica oculto */
+    }
+}
