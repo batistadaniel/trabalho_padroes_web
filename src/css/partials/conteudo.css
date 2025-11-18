@@ -15,3 +15,13 @@
 h1, h2, h3 {
     font-family: "Poppins", Sans-Serif;
 }
+
+.img {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+
+.img img {
+    width: 60%;
+}
